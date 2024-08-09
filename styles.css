@@ -1,15 +1,36 @@
-html {
-    width: 1280px;
+body {
+    max-width: 1280px;
+    /*background: rgb(255,186,221);*/
+    background: linear-gradient(90deg, rgba(255,186,221,1) 0%, rgba(194,123,232,1) 44%, rgba(103,246,217,1) 100%);
 }
 
+nav li {
+    float: right;
+    line-height: 50px;
+    padding-right: 30px;
+    list-style-type: none;
+ }
+ /*removing link lines and adding padding*/
+ nav a{
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding: 10px;
+    color: #b06bfa;
+ }
+ /*changing the hover color*/
+ nav a:hover {
+    background: pink;
+    color: white;
+ }
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
 
 /*styles for accordion*/
 #accordion{
-    margin: 1rem auto;
-}
-#accordion{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
+    border: 2px solid;
+    box-sizing: border-box;
 }

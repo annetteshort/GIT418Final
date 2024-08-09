@@ -4,8 +4,4 @@
 
 
 //code for Accordion
-$(function(){
-    $("#accordion").accordion({
-        collapsible: true
-    });
-});
+$("#accordion").accordion();
