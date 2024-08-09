@@ -73,7 +73,25 @@
                 </div>
             </div>
             <!--End of accordion-->
-
+            
+            <!--Web storage-->
+            <form>
+                <label for="title">Enter the title to add to your bookshelf: </label>
+                <span class="message">Please enter a title and submit again</span>
+                <input type="text" name="title" id="title">
+                <input type="submit" name="titleSubmit" id="titleSubmit" value="Add to Bookshelf!">
+            </form>
+            <strong class="hidden">My Bookshelf</strong>
+            <ul id="bookshelf"></ul>
+        </section>
+        <div id="modal" class="hidden">
+            <div id="inner-modal">
+                <p></p>
+                <button id="confirm">Yes, Remove From Shelf</button>
+                <button id="cancel">No, Do Not Remove From Shelf</button>
+            </div>
+        </div>
+            <!--End of web storage-->
         </main>
 
     </body>
