@@ -1,7 +1,11 @@
 body {
-    max-width: 1280px;
+    width: 1280px;
     /*background: rgb(255,186,221);*/
     background: linear-gradient(90deg, rgba(255,186,221,1) 0%, rgba(194,123,232,1) 44%, rgba(103,246,217,1) 100%);
+}
+
+h1, h2{
+    text-align: center;
 }
 
 nav li {
@@ -26,11 +30,39 @@ nav li {
 img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 200px;
+    height: auto;
 }
-
+/****************************************/
+/*styles for carousel*/
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+    float: left;
+}
+.image-shown {
+    display: inline-block;
+}
+.image-hidden {
+    display: none;
+}
+.previous, .next {
+    float: left;
+    margin-top: 130px ;
+}
+.previous {
+    margin-right: 15px;
+}
+.next {
+   margin-left: 15px; 
+}
+/****************************************/
 /*styles for accordion*/
 #accordion{
     border: 2px solid;
-    box-sizing: border-box;
 }

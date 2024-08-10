@@ -6,44 +6,35 @@
         <meta name="description" content="A single page website for Sarah J Maas fans.">
         <meta name="author" content="Annette Short">
         <link rel="stylesheet" href="styles.css">
-        <script src="myscript.js"></script>
-
-        <!--Jquery and jquery ui-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+        
     </head>
 
     <body>
         <header>
-            <h1>Welcome to the Night Court</h1>
-            <img src="Images/Velaris.png" alt="mountain with night time sky above lit up city"><!--Don't forget to add something here-->
-
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#carousel">The Series</a></li>
+                    <li><a href="#accordion">Synopsis</a></li>
+                    <li><a href="#Bookshelf">Your Bookshelf</a></li>
                 </ul>
             </nav>
+
+            <h1>Welcome to the Night Court</h1>
+            <img src="Images/Velaris.png" alt="mountain with night time sky above lit up city"><!--Don't forget to add something here-->
         </header>
 
         <main>
             <h2>Learn more about the series'</h2>
             <!--Carousel container for javascript-->
             <div class="carousel-container">
+                <a class="previous" href="#">Previous</a>
                 <div class="carousel">
-                    <div class="imageSlide1">
-                       <img src="Images/ThroneOfGlass.png" alt="Throne of glass">
-                    </div>   
-
-                    <div class="imageSlide1">
-                        <img src="Images/ACOTAR_1-min.jpg" alt="A Court of Thorns and Roses">
-                     </div> 
-
-                     <div class="imageSlide1">
-                        <img src="Images/crescentCity.jpg" alt="Crescent City">
-                     </div> 
+                    <img class="image-shown" src="Images/ThroneOfGlass.png" alt="Throne of glass">
+                    <img class= "image-hidden" src="Images/ACOTAR_1-min.jpg" alt="A Court of Thorns and Roses">
+                    <img class= "image-hidden" src="Images/crescentCity.jpg" alt="Crescent City">
                 </div>
+                <a class="next" href="#">Next</a>
             </div>
             <!--End of carousel-->
 
@@ -56,7 +47,6 @@
                     The crown prince will provoke her, the captain of the guard will protect her but in a land with no magic...Will they stand a chance?  
                     </p>
                 </div>
-
                 <h3>A Court of Thorns and Roses</h3>
                 <div>
                     <p>
@@ -65,7 +55,6 @@
                     this is short lived, when hell breaks loose, she must find a way to stop evil.  
                     </p>
                 </div>
-
                 <h3>Crescent City</h3>
                 <div>
                     <p>
@@ -78,7 +67,7 @@
             <!--End of accordion-->
             
             <!--Web storage-->
-            <form>
+            <form class="Bookshelf">
                 <label for="title">Enter the title to add to your bookshelf: </label>
                 <span class="message">Please enter a title and submit again</span>
                 <input type="text" name="title" id="title">
@@ -96,6 +85,9 @@
             </div>
             <!--End of web storage-->
         </main>
-
+        <script src="js/jquery.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
+    <footer> Annette Short -- For educational purposes only -- 2024</footer>
 </html>
