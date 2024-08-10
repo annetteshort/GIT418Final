@@ -11,18 +11,24 @@
 
     <body>
         <header>
+            <div class="logo">
+                <img src="Images/Velarislog.png" alt="">
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#carousel">The Series</a></li>
+                    <li><a href="#">The Series</a></li>
                     <li><a href="#accordion">Synopsis</a></li>
-                    <li><a href="#Bookshelf">Your Bookshelf</a></li>
+                    <li><a href="#shelf">Your Bookshelf</a></li>
                 </ul>
             </nav>
 
             <h1>Welcome to the Night Court</h1>
-            <img src="Images/Velaris.png" alt="mountain with night time sky above lit up city"><!--Don't forget to add something here-->
+        <!--<img src="Images/velaris.jpg" alt="mountain with night time sky above lit up city">-->
         </header>
+
+        <div class="banner"><!--Empty for banner--></div>
 
         <main>
             <h2>Learn more about the series'</h2>
@@ -67,27 +73,31 @@
             <!--End of accordion-->
             
             <!--Web storage-->
-            <form class="Bookshelf">
-                <label for="title">Enter the title to add to your bookshelf: </label>
-                <span class="message">Please enter a title and submit again</span>
-                <input type="text" name="title" id="title">
-                <input type="submit" name="titleSubmit" id="titleSubmit" value="Add to Bookshelf!">
-            </form>
-            <strong class="hidden">My Bookshelf</strong>
-            <ul id="bookshelf"></ul>
+            <div id="shelf">
+                <form class="Bookshelf">
+                    <label for="title">Enter the title to add to your bookshelf: </label>
+                    <span class="message">Please enter a title and submit again</span>
+                    <input type="text" name="title" id="title">
+                    <input type="submit" name="titleSubmit" id="titleSubmit" value="Add to Bookshelf!">
+                </form>
+                <strong class="hidden">My Bookshelf</strong>
+                <ul id="bookshelf"></ul>
 
-            <div id="modal" class="hidden">
-                <div id="inner-modal">
-                    <p></p>
-                    <button id="confirm">Yes, Remove From Shelf</button>
-                    <button id="cancel">No, Do Not Remove From Shelf</button>
+                <div id="modal" class="hidden">
+                    <div id="inner-modal">
+                        <p></p>
+                        <button id="confirm">Yes, Remove From Shelf</button>
+                        <button id="cancel">No, Do Not Remove From Shelf</button>
+                    </div>
                 </div>
             </div>
             <!--End of web storage-->
         </main>
+
+        <!--Jquery added - it's at the bottom becaue I couldn't get it to work so I tried randomly palcing it somewhere-->
         <script src="js/jquery.js"></script>
         <script src="js/custom.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <footer>Annette Short -- For educational purposes only -- 2024</footer>
     </body>
-    <footer> Annette Short -- For educational purposes only -- 2024</footer>
 </html>
